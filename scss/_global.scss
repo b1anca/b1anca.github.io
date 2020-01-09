@@ -1,0 +1,65 @@
+body {
+  @include font-primary;
+  padding-top: 54px;
+  color: $secondary;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: $sidebar-base-width;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include font-primary;
+  font-weight: 700;
+  color: $primary;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading {
+  font-weight: 500;
+  @include font-primary;
+  font-size: 1.5rem;
+}
+
+.social-icons {
+  a {
+    display: inline-block;
+    color: $secondary;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}
+

@@ -44,6 +44,7 @@ h3 {
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
+  margin-top: 1rem;
 }
 
 .subheading {
@@ -52,7 +53,7 @@ p.lead {
   font-size: 1.5rem;
 }
 
-.social-icons a {
+.bottom-section a {
   display: inline-block;
   color: #868e96;
   border-radius: 100%;
@@ -62,11 +63,11 @@ p.lead {
   margin-right: 1rem;
 }
 
-.social-icons a:last-child {
+.bottom-section a:last-child {
   margin-right: 0;
 }
 
-.social-icons a:hover {
+.bottom-section a:hover {
   color: #343a40 !important;
 }
 

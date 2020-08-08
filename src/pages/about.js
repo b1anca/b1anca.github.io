@@ -12,7 +12,7 @@ const About = () => {
       <SEO title="about" />
       <h1>about me</h1>
       <p>
-        I'm a fullstack dev with {xp}+ years of experience with commercial
+        I'm a full stack developer with {xp} years of experience with commercial
         projects
       </p>
       <p>some of my unfinished projects can be found at</p>

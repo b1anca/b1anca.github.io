@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
 
 const Container = styled.div`
   margin: auto;
-  max-width: 960;
+  max-width: 960px;
   min-height: 100%;
   padding: 0 1.0875rem 1.45rem;
 `

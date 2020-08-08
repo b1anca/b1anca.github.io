@@ -1,27 +1,28 @@
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
 import Link from "./link"
 
 const Header = () => (
-  <header
-    style={{
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-        display: "flex",
-        justifyContent: "flex-end",
-      }}
-    >
+  <StyledHeader>
+    <LinksContainer>
       <Link to="/">home</Link>
       <Link to="/about">about</Link>
-    </div>
-  </header>
+    </LinksContainer>
+  </StyledHeader>
 )
+
+const StyledHeader = styled.header`
+  margin-bottom: 1.45rem;
+`
+
+const LinksContainer = styled.div`
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+  display: flex;
+  justify-content: flex-end;
+`
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

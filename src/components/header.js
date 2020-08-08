@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Link from "./link"
 
 const Header = () => (
   <header
@@ -17,26 +17,8 @@ const Header = () => (
         justifyContent: "flex-end",
       }}
     >
-      <Link
-        to="/"
-        style={{
-          textDecoration: `none`,
-          color: "black",
-          padding: `0 1rem`,
-        }}
-      >
-        home
-      </Link>
-      <Link
-        to="/about"
-        style={{
-          textDecoration: `none`,
-          color: "black",
-          padding: `0 1rem`,
-        }}
-      >
-        about
-      </Link>
+      <Link to="/">home</Link>
+      <Link to="/about">about</Link>
     </div>
   </header>
 )

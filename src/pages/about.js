@@ -15,7 +15,7 @@ const SecondPage = () => {
         I'm a fullstack dev with {xp}+ years of experience with commercial
         projects
       </p>
-      <p>some of my unfinished projects can be found on</p>
+      <p>some of my unfinished projects can be found at</p>
       <Link
         to="https://github.com/b1anca"
         style={{

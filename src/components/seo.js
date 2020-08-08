@@ -9,8 +9,21 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import Analytics from "analytics"
+import googleAnalytics from "@analytics/google-analytics"
 
 function SEO({ description, lang, meta, title }) {
+  const analytics = Analytics({
+    app: "b1anca.github.io",
+    plugins: [
+      googleAnalytics({
+        trackingId: "UA-174919459-1",
+      }),
+    ],
+  })
+
+  analytics.page()
+
   const { site } = useStaticQuery(
     graphql`
       query {

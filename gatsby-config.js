@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `bianca vieira`,
-    description: `full stack developer`,
+    description: `fullstack developer`,
     author: `@b1anca`,
   },
   plugins: [
@@ -40,6 +40,15 @@ module.exports = {
         defer: false,
         sampleRate: 5,
         siteSpeedSampleRate: 10,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["jetbrains-mono"],
+          urls: ["/fonts/fonts.css"],
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

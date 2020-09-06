@@ -1,17 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link as GLink } from "gatsby"
 
-const CustomLink = ({ to, children }) => (
-  <Link
-    to={to}
-    style={{
-      textDecoration: `none`,
-      color: "black",
-      padding: `0 1rem`,
-    }}
-  >
+const styles = {
+  textDecoration: `none`,
+  color: "white",
+  padding: `0 1rem`,
+}
+
+const activeStyles = { backgroundColor: "white", color: "black" }
+
+const Link = ({ to, children }) => (
+  <GLink to={to} style={styles} activeStyle={activeStyles}>
     {children}
-  </Link>
+  </GLink>
 )
 
-export default CustomLink
+export default Link

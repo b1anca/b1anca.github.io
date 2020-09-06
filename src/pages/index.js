@@ -1,14 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="home" />
-    <h1>hi, I'm bianca vieira</h1>
+    <h1>hi, i'm bianca vieira</h1>
     <p>fullstack developer</p>
-    <Image />
   </Layout>
 )
 

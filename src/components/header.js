@@ -7,7 +7,7 @@ const Header = () => (
   <StyledHeader>
     <LinksContainer>
       <Link to="/">home</Link>
-      <Link to="/about">about</Link>
+      <Link to="/about/">about</Link>
     </LinksContainer>
   </StyledHeader>
 )
